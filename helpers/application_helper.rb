@@ -1,11 +1,11 @@
 module ApplicationHelper
 
-  def full_title(page_tile = "")
+  def full_title(page_title = "")
     base_title = "Pgirlsladys"
-    if page.title.empty?
-      base_tile
+    if page_title.empty?
+      base_title
     else
-      page_tile + "|" + base_tile
+      page_title + "|" + base_title
     end
   end
 end
